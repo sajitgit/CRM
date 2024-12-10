@@ -11,9 +11,14 @@ import Constants.ConstantValues;
 
 public class WaitUtility {
 
-
+public  WebDriver driver;
 	
-public void waitForVisibilityofElement(WebDriver driver,WebElement element) {
+public WaitUtility(WebDriver driver) {
+		this.driver=driver;
+	}
+
+
+public void waitForVisibilityofElement(WebElement element) {
 		
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(ConstantValues.EXPLICITWAIT));
 		wait.until(ExpectedConditions.visibilityOf(element));

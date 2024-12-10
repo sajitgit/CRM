@@ -19,6 +19,12 @@ public class PageUtilities {
 	private WebDriver driver;
 	
 	
+	public PageUtilities(WebDriver driver) {
+		
+		this.driver=driver;
+		// TODO Auto-generated constructor stub
+	}
+
 	public void clickOnElement(WebElement element) {
 		
 		
@@ -75,9 +81,20 @@ public class PageUtilities {
 		jsc.executeScript("arguments[0].click();",element);
 	}
 	
-	public void javascriptScroll() {
+	public void javascriptScrollBottom() {
 		JavascriptExecutor jsc = (JavascriptExecutor)driver;
 		jsc.executeScript("window.scrollBy(0,1000)");
+	}
+	
+	public void javascriptScrollUp() {
+		JavascriptExecutor jsc = (JavascriptExecutor)driver;
+		jsc.executeScript("window.scrollBy(0,0)");
+	}
+	
+	
+	public void javascriptScrollelementToView(WebElement element) {
+		JavascriptExecutor jsc = (JavascriptExecutor)driver;
+		jsc.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 	
 	public void waitForVisibility(WebElement element) {
