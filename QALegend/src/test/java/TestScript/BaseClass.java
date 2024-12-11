@@ -16,6 +16,7 @@ import PageClasses.QALegendEventPage;
 import PageClasses.QALegendHomePage;
 import PageClasses.QALegendLoginPage;
 import PageClasses.QALegendSignUpPage;
+import PageClasses.QALegendTicketsPage;
 
 public class BaseClass {
 	
@@ -27,6 +28,7 @@ public WebDriver driver;//declare
     QALegendEventPage eventpage;
     QALegendSignUpPage signuppage;
     QALegendEstimatesPage estimatespage;
+    QALegendTicketsPage ticketspage;
     
     
     public Properties prop;
@@ -74,6 +76,7 @@ public WebDriver driver;//declare
 		eventpage = new QALegendEventPage(driver);
 		signuppage=new QALegendSignUpPage(driver);
 		estimatespage = new QALegendEstimatesPage(driver);
+		ticketspage = new QALegendTicketsPage(driver);
 		
 	
 	}

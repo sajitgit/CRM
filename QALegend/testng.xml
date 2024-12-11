@@ -9,6 +9,7 @@
       <class name="TestScript.QALegendLoginTest"/>
       <class name="TestScript.QALegendHomePageTest"/>
       <class name ="TestScript.QALegendEstimatesTest"/>
+      <class name ="TestScript.QALegendTicketsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

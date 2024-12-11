@@ -23,6 +23,9 @@ public class QALegendHomePage {
 	@FindBy(xpath = "//span[text()=\"Estimates\"]")
 	WebElement homapageEstimatesButton;
 	
+	@FindBy(xpath="//span[text()=\"Tickets\"]")
+	WebElement homepageTicketsButton;
+	
 	@FindBy(xpath = "//span[@class=\"topbar-user-name\"]")
 	WebElement usernameText;
 	
@@ -169,6 +172,10 @@ public class QALegendHomePage {
 	}
 	
 
+	public void clickOnHomapageTicketsButton() {
+		
+		pageutilities.clickOnElement(homepageTicketsButton);
+	}
 	
 	
 }

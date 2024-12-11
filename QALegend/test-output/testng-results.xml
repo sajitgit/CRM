@@ -1,73 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T14:33:59 IST" name="Suite" finished-at="2024-12-11T14:37:19 IST" duration-ms="200529">
+  <suite started-at="2024-12-11T19:29:35 IST" name="Suite" finished-at="2024-12-11T19:33:27 IST" duration-ms="232514">
     <groups>
     </groups>
-    <test started-at="2024-12-11T14:33:59 IST" name="Test" finished-at="2024-12-11T14:37:19 IST" duration-ms="200529">
+    <test started-at="2024-12-11T19:29:35 IST" name="Test" finished-at="2024-12-11T19:33:27 IST" duration-ms="232514">
       <class name="TestScript.QALegendHomePageTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@221a3fa4]" started-at="2024-12-11T14:35:47 IST" name="browserinitialization" finished-at="2024-12-11T14:36:01 IST" duration-ms="13937" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@2b40ff9c]" started-at="2024-12-11T19:31:08 IST" name="browserinitialization" finished-at="2024-12-11T19:31:29 IST" duration-ms="20820" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="createnewDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@221a3fa4]" started-at="2024-12-11T14:36:01 IST" name="createnewDashboard" finished-at="2024-12-11T14:36:10 IST" duration-ms="9148" status="PASS">
+        <test-method signature="createnewDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@2b40ff9c]" started-at="2024-12-11T19:31:29 IST" name="createnewDashboard" finished-at="2024-12-11T19:31:39 IST" duration-ms="10273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createnewDashboard -->
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@221a3fa4]" started-at="2024-12-11T14:36:10 IST" name="browserinitialization" finished-at="2024-12-11T14:36:36 IST" duration-ms="25605" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@2b40ff9c]" started-at="2024-12-11T19:31:39 IST" name="browserinitialization" finished-at="2024-12-11T19:32:04 IST" duration-ms="24384" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="editDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@221a3fa4]" started-at="2024-12-11T14:36:36 IST" name="editDashboard" finished-at="2024-12-11T14:36:55 IST" duration-ms="18745" status="PASS">
+        <test-method signature="editDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@2b40ff9c]" started-at="2024-12-11T19:32:04 IST" name="editDashboard" finished-at="2024-12-11T19:32:22 IST" duration-ms="18900" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editDashboard -->
       </class> <!-- TestScript.QALegendHomePageTest -->
       <class name="TestScript.QALegendLoginTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendLoginTest@7d9d0818]" started-at="2024-12-11T14:35:03 IST" name="browserinitialization" finished-at="2024-12-11T14:35:28 IST" duration-ms="24745" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendLoginTest@451001e5]" started-at="2024-12-11T19:30:23 IST" name="browserinitialization" finished-at="2024-12-11T19:30:41 IST" duration-ms="18305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="loginuserlogin()[pri:0, instance:TestScript.QALegendLoginTest@7d9d0818]" started-at="2024-12-11T14:35:28 IST" name="loginuserlogin" finished-at="2024-12-11T14:35:30 IST" duration-ms="2417" status="PASS">
+        <test-method signature="loginuserlogin()[pri:0, instance:TestScript.QALegendLoginTest@451001e5]" started-at="2024-12-11T19:30:41 IST" name="loginuserlogin" finished-at="2024-12-11T19:30:43 IST" duration-ms="2341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginuserlogin -->
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendLoginTest@7d9d0818]" started-at="2024-12-11T14:35:30 IST" name="browserinitialization" finished-at="2024-12-11T14:35:47 IST" duration-ms="16618" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendLoginTest@451001e5]" started-at="2024-12-11T19:30:43 IST" name="browserinitialization" finished-at="2024-12-11T19:31:08 IST" duration-ms="24748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="urlValidation()[pri:0, instance:TestScript.QALegendLoginTest@7d9d0818]" started-at="2024-12-11T14:35:47 IST" name="urlValidation" finished-at="2024-12-11T14:35:47 IST" duration-ms="24" status="PASS">
+        <test-method signature="urlValidation()[pri:0, instance:TestScript.QALegendLoginTest@451001e5]" started-at="2024-12-11T19:31:08 IST" name="urlValidation" finished-at="2024-12-11T19:31:08 IST" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- urlValidation -->
       </class> <!-- TestScript.QALegendLoginTest -->
       <class name="TestScript.QALegendEventTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEventTest@350aac89]" started-at="2024-12-11T14:33:59 IST" name="browserinitialization" finished-at="2024-12-11T14:34:25 IST" duration-ms="25848" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEventTest@17f9d882]" started-at="2024-12-11T19:29:35 IST" name="browserinitialization" finished-at="2024-12-11T19:29:50 IST" duration-ms="15566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="addanEvent()[pri:0, instance:TestScript.QALegendEventTest@350aac89]" started-at="2024-12-11T14:34:25 IST" name="addanEvent" finished-at="2024-12-11T14:34:33 IST" duration-ms="8512" status="PASS">
+        <test-method signature="addanEvent()[pri:0, instance:TestScript.QALegendEventTest@17f9d882]" started-at="2024-12-11T19:29:50 IST" name="addanEvent" finished-at="2024-12-11T19:30:00 IST" duration-ms="9242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addanEvent -->
       </class> <!-- TestScript.QALegendEventTest -->
-      <class name="TestScript.QALegendEstimatesTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEstimatesTest@451001e5]" started-at="2024-12-11T14:36:55 IST" name="browserinitialization" finished-at="2024-12-11T14:37:09 IST" duration-ms="14672" status="PASS">
+      <class name="TestScript.QALegendTicketsTest">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendTicketsTest@4d1c005e]" started-at="2024-12-11T19:32:51 IST" name="browserinitialization" finished-at="2024-12-11T19:33:16 IST" duration-ms="25447" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="createEstimate()[pri:0, instance:TestScript.QALegendEstimatesTest@451001e5]" started-at="2024-12-11T14:37:09 IST" name="createEstimate" finished-at="2024-12-11T14:37:19 IST" duration-ms="10174" status="PASS">
+        <test-method signature="createTicket()[pri:0, instance:TestScript.QALegendTicketsTest@4d1c005e]" started-at="2024-12-11T19:33:16 IST" name="createTicket" finished-at="2024-12-11T19:33:27 IST" duration-ms="11058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTicket -->
+      </class> <!-- TestScript.QALegendTicketsTest -->
+      <class name="TestScript.QALegendEstimatesTest">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEstimatesTest@3e08ff24]" started-at="2024-12-11T19:32:22 IST" name="browserinitialization" finished-at="2024-12-11T19:32:41 IST" duration-ms="18265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserinitialization -->
+        <test-method signature="createEstimate()[pri:0, instance:TestScript.QALegendEstimatesTest@3e08ff24]" started-at="2024-12-11T19:32:41 IST" name="createEstimate" finished-at="2024-12-11T19:32:51 IST" duration-ms="9995" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createEstimate -->
       </class> <!-- TestScript.QALegendEstimatesTest -->
       <class name="TestScript.QALegendSignupTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@183ec003]" started-at="2024-12-11T14:34:33 IST" name="browserinitialization" finished-at="2024-12-11T14:34:58 IST" duration-ms="24490" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@221a3fa4]" started-at="2024-12-11T19:30:00 IST" name="browserinitialization" finished-at="2024-12-11T19:30:17 IST" duration-ms="17286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="signup()[pri:0, instance:TestScript.QALegendSignupTest@183ec003]" started-at="2024-12-11T14:34:58 IST" name="signup" finished-at="2024-12-11T14:35:03 IST" duration-ms="5445" status="PASS">
+        <test-method signature="signup()[pri:0, instance:TestScript.QALegendSignupTest@221a3fa4]" started-at="2024-12-11T19:30:17 IST" name="signup" finished-at="2024-12-11T19:30:22 IST" duration-ms="5514" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup -->
