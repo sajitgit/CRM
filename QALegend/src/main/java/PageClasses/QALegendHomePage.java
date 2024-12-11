@@ -95,7 +95,7 @@ public class QALegendHomePage {
 	
 	public String getUsernameText() {
 		
-		pageutilities.waitForVisibility(usernameText);
+		waitutility.waitForVisibilityofElement(usernameText);
 		String userName=pageutilities.getTextOfElement(usernameText);
 		return userName;
 		
@@ -103,7 +103,7 @@ public class QALegendHomePage {
 	
 	public void creatingnewDashboard() {
 		
-		pageutilities.waitForVisibility(dashboarddropbutton);
+		waitutility.waitForVisibilityofElement(dashboarddropbutton);
 		pageutilities.clickOnElement(dashboarddropbutton);
 		waitutility.waitForVisibilityofElement(dashboardplusButton);
 		pageutilities.clickOnElement(dashboardplusButton);
@@ -120,7 +120,7 @@ public class QALegendHomePage {
 	}
 	
 	public String totalProjectsCountfromwidgets() {
-		pageutilities.waitForVisibility(projectcountinsideWidget);
+		waitutility.waitForVisibilityofElement(projectcountinsideWidget);
 		String count=pageutilities.getTextOfElement(projectcountinsideWidget);
 		return count;
 		
@@ -129,16 +129,16 @@ public class QALegendHomePage {
 	
 	public void editingDashboard(String uniqueid) {
 		
-		pageutilities.waitForVisibility(dashboarddropbutton);
+		waitutility.waitForVisibilityofElement(dashboarddropbutton);
 		pageutilities.clickOnElement(dashboarddropbutton);
 		dropdownitemsdashboard.get(0).click();
-		pageutilities.waitForVisibility(ellipsisButton);
+		waitutility.waitForVisibilityofElement(ellipsisButton);
 		pageutilities.clickOnElement(ellipsisButton);
 		pageutilities.clickOnElement(editbuttoninsideEllipsis);
 		pageutilities.clearField(createdashboardTitle);
 		pageutilities.enterText(createdashboardTitle, uniqueid);
 		pageutilities.clickOnElement(saveButton);
-		pageutilities.waitForInvisibility(saveButton);
+		waitutility.waitForInvisibilityofElement(saveButton);
 		
 	
 		
@@ -146,7 +146,7 @@ public class QALegendHomePage {
 	
 	public String validatatingEditDashboard() {
 		
-		pageutilities.waitForVisibility(projectcountinsideWidget);
+		waitutility.waitForVisibilityofElement(projectcountinsideWidget);
 		String title=pageutilities.getTextOfElement(titleinsideDashboardView);
 		return title;		
 		

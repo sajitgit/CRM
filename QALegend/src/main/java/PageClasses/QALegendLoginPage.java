@@ -25,19 +25,7 @@ public class QALegendLoginPage {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	
 	
 	

@@ -1,16 +1,20 @@
 package PageClasses;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtilities;
+import Utilities.WaitUtility;
 
 public class QALegendEstimatesPage {
 
 	public WebDriver driver;
 	public PageUtilities pageutilities;
+	public WaitUtility waitutility;
 	
 	
 	@FindBy(xpath = "//a[@title=\"Request an estimate\"]")
@@ -25,6 +29,8 @@ public class QALegendEstimatesPage {
 	WebElement requestEstimateButton;
 	@FindBy(xpath= "//div[text()=\"Your request has been submitted successfully!\"]")
 	WebElement alertMessage;
+	@FindBy(xpath="//li[@class=\"list-group-item\"]/a")
+	List<WebElement> estimateList;
 	
 	
 	
@@ -34,6 +40,7 @@ public class QALegendEstimatesPage {
 		
 		this.driver= driver;
 		pageutilities= new PageUtilities(driver);
+		waitutility = new WaitUtility(driver);
 		PageFactory.initElements(driver, this);
 		// TODO Auto-generated constructor stub
 	}
@@ -41,21 +48,30 @@ public class QALegendEstimatesPage {
 	
 	public void creatinganEstimate(String field) {
 		
-		pageutilities.waitForVisibility(requestanEstimateButton);
+		waitutility.waitForVisibilityofElement(requestanEstimateButton);
 		pageutilities.clickOnElement(requestanEstimateButton);
-		pageutilities.waitForVisibility(testEstimateOption);
-		pageutilities.clickOnElement(testEstimateOption);
+		
+		for(int i=0;i<estimateList.size();i++) {
+			
+			String text = estimateList.get(i).getText();
+			if(text.contains("TestEstimate-Sample")) {
+				estimateList.get(i).click();
+				break;
+			}
+		}
+		
 		pageutilities.enterText(fieldTextBox, field);
 		pageutilities.clickOnElement(ageBox);
 		pageutilities.keyBoardEnter();
-		pageutilities.clickOnElement(requestEstimateButton);
+		pageutilities.clickOnElement(requestEstimateButton);	
 		
 		
 	}
 	
+	
 	public String createEstimateAlertValidation() {
 		
-		pageutilities.waitForVisibility(alertMessage);
+		waitutility.waitForVisibilityofElement(alertMessage);
 		String message = pageutilities.getTextOfElement(alertMessage);
 		return message;
 	}

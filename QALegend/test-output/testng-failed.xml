@@ -4,12 +4,12 @@
   <parameter name="browser" value="chrome"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestScript.QALegendHomePageTest">
+      <class name="TestScript.QALegendEstimatesTest">
         <methods>
           <include name="browserinitialization"/>
-          <include name="createnewDashboard"/>
+          <include name="createEstimate"/>
         </methods>
-      </class> <!-- TestScript.QALegendHomePageTest -->
+      </class> <!-- TestScript.QALegendEstimatesTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

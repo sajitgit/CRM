@@ -6,12 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtilities;
+import Utilities.WaitUtility;
 
 public class QALegendEventPage {
 	
 
 	public WebDriver driver;
 	public PageUtilities pageutilities;
+	public WaitUtility waitutility;
 	
 	@FindBy (xpath="(//a[@title=\"Add event\"])[2]")
 	WebElement addEventButton;	
@@ -49,7 +51,8 @@ public class QALegendEventPage {
 		public QALegendEventPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;
-		this.pageutilities= new PageUtilities(driver);
+		pageutilities= new PageUtilities(driver);
+		waitutility = new WaitUtility(driver);
 		PageFactory.initElements(driver, this);
 		
 	}

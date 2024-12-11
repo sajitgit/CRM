@@ -24,6 +24,13 @@ public void waitForVisibilityofElement(WebElement element) {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
+public void waitForInvisibilityofElement(WebElement element) {
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(ConstantValues.EXPLICITWAIT));
+	wait.until(ExpectedConditions.invisibilityOf(element));
+	
+}
+
 
 public void waitForClickingElement(WebDriver driver,WebElement element) {
 	
