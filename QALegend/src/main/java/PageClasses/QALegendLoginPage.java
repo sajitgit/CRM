@@ -39,6 +39,8 @@ public class QALegendLoginPage {
 	
 	
 	
+	
+	
 	public QALegendLoginPage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		
@@ -52,13 +54,18 @@ public class QALegendLoginPage {
 
 
 
-
-
-
 	public void login(String userName,String Password) {
 		
 		pageutilities.enterText(emailField, userName);
 		pageutilities.enterText(passwordField, Password);
 		pageutilities.clickOnElement(submitButton);
+	}
+	
+	
+	public String urlVerify() {
+		
+		String currenturl=pageutilities.getCurrentUrl();
+		return currenturl;
+		
 	}
 }

@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 
 import Constants.ConstantValues;
+import PageClasses.QALegendEstimatesPage;
 import PageClasses.QALegendEventPage;
 import PageClasses.QALegendHomePage;
 import PageClasses.QALegendLoginPage;
@@ -25,6 +26,7 @@ public WebDriver driver;//declare
     QALegendHomePage homepage;
     QALegendEventPage eventpage;
     QALegendSignUpPage signuppage;
+    QALegendEstimatesPage estimatespage;
     
     
     public Properties prop;
@@ -71,6 +73,7 @@ public WebDriver driver;//declare
 		homepage = new QALegendHomePage(driver);
 		eventpage = new QALegendEventPage(driver);
 		signuppage=new QALegendSignUpPage(driver);
+		estimatespage = new QALegendEstimatesPage(driver);
 		
 	
 	}

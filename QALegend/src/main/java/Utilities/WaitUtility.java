@@ -40,7 +40,7 @@ public void waitForTextTObePresentInElement(WebDriver driver,WebElement element,
 }
 
 
-public void waitForELementToBeSelected(WebDriver driver,WebElement element) {
+public void waitForELementToBeSelected(WebElement element) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(ConstantValues.EXPLICITWAIT));
 	wait.until(ExpectedConditions.elementToBeSelected(element));
@@ -48,7 +48,7 @@ public void waitForELementToBeSelected(WebDriver driver,WebElement element) {
 }
 
 
-public void waitForAttributeofElement(WebDriver driver,WebElement element,String Attribute,String value) {
+public void waitForAttributeofElement(WebElement element,String Attribute,String value) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(ConstantValues.EXPLICITWAIT));
 	wait.until(ExpectedConditions.attributeToBe(element, Attribute, value));

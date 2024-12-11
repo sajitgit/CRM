@@ -172,5 +172,11 @@ public class PageUtilities {
 		
 	}
 	
+	public String getCurrentUrl() {
+		
+		String currenturl = driver.getCurrentUrl();
+		return currenturl;
+	}
+	
 	
 }
