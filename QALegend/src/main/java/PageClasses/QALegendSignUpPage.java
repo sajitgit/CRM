@@ -15,6 +15,7 @@ public class QALegendSignUpPage {
 	public PageUtilities pageutilities;
 	public WaitUtility waitutility;
 
+
 	@FindBy(id="first_name")
 	WebElement firstnameTextBox;
 	@FindBy(id="last_name")
@@ -58,6 +59,7 @@ public class QALegendSignUpPage {
 	
 	public void enterSignupDetails(String firstname,String lastname,String Company,String email,String password) {
 		
+	
 		firstnameTextBox.sendKeys(firstname);
 		lastnameTextBox.sendKeys(lastname);
 		companynameTextBox.sendKeys(Company);
@@ -69,11 +71,11 @@ public class QALegendSignUpPage {
 		retypepasswordTextBox.sendKeys(password);
 		pageutilities.clickOnElement(radiobuttonMale);
 		pageutilities.clickOnElement(signupButton);
-		
-		
+				
 		
 		
 	}
+	
 	
 	public String getAlertDetails() {
 		

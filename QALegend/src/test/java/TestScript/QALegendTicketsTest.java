@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import Utilities.ExcelUtility;
+import Utilities.FakerUtility;
 
 public class QALegendTicketsTest extends BaseClass {
 
@@ -14,11 +15,12 @@ public class QALegendTicketsTest extends BaseClass {
 	public void createTicket() throws IOException {
 		
 		
-		String title = ExcelUtility.getStringData(1, 3, "Sheet1");
-		String titledescription = ExcelUtility.getStringData(1, 4, "Sheet1");		
+		String title = prop.getProperty("bugname")+FakerUtility.uniqueStringGenerator();
+		String titledescription = prop.getProperty("bugdescription");		
 		loginpage.login(prop.getProperty("loginuser"), prop.getProperty("loginpassword"));
 		homepage.clickOnHomapageTicketsButton();
 		ticketspage.creatingnewTicket(title, titledescription);
+		ticketspage.searchingBug(title);
 		Assert.assertEquals(ticketspage.validatingnewstatus(), "New");
 		ticketspage.closingNewTicket();
 		Assert.assertEquals(ticketspage.validatingclosedStatus(), "Closed");

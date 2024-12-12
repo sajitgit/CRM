@@ -24,6 +24,10 @@ public class QALegendTicketsPage {
 	WebElement descriptionTextBox;
 	@FindBy(xpath = "//button[@type=\"submit\"]")
 	WebElement saveButton;
+	@FindBy(xpath="//input[@type=\"search\"]")
+	WebElement ticketSearchBox;
+	@FindBy(xpath="(//table[@id=\"ticket-table\"]//tbody//tr//a)[1]")
+	WebElement bugIDLink;
 	@FindBy(xpath = "//table[@id=\"ticket-table\"]//tr//td//span")
 	List<WebElement> tablerownewStatus;
 	@FindBy(xpath ="//table[@id=\"ticket-table\"]//tr//td//a")
@@ -60,10 +64,19 @@ public class QALegendTicketsPage {
 	}
 	
 	
-	public String validatingnewstatus() {
+	public void searchingBug(String bugTitle) {
 		
 		waitutility.waitForInvisibilityofElement(loader);
 		waitutility.waitForVisibilityofElement(addticketButton);
+		pageutilities.clickOnElement(ticketSearchBox);
+		pageutilities.enterText(ticketSearchBox, bugTitle);
+		pageutilities.keyBoardEnter();
+				
+	}
+	
+	
+	public String validatingnewstatus() {
+				
 		String status = tablerownewStatus.get(0).getText();
 		return status;
 				
@@ -72,9 +85,10 @@ public class QALegendTicketsPage {
 	public void closingNewTicket() {
 		
 		
-		
-		tablerowid.get(0).click();
+		pageutilities.clickOnElement(bugIDLink);
+		waitutility.waitForVisibilityofElement(optionsbutton);
 		pageutilities.clickOnElement(optionsbutton);
+		waitutility.waitForVisibilityofElement(markasClosedButton);
 		pageutilities.clickOnElement(markasClosedButton);
 		waitutility.waitForInvisibilityofElement(loader);
 			

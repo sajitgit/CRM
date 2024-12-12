@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import Constants.ConstantValues;
@@ -79,6 +80,12 @@ public WebDriver driver;//declare
 		ticketspage = new QALegendTicketsPage(driver);
 		
 	
+	}
+	
+	@AfterMethod
+	public void browserClose() {
+		
+		driver.close();
 	}
 
 }

@@ -6,12 +6,14 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import Utilities.PageUtilities;
+import Utilities.WaitUtility;
 
 public class QALegendLoginPage {
 	
 	
 	public WebDriver driver;
 	public PageUtilities pageutilities;
+	public WaitUtility waitutility;
 	
 	@FindBy(id = "email")
 	WebElement emailField;
@@ -33,11 +35,11 @@ public class QALegendLoginPage {
 		// TODO Auto-generated constructor stub
 		
 		this.driver=driver;
-		this.pageutilities=new PageUtilities(driver);
+		pageutilities=new PageUtilities(driver);
+		waitutility = new WaitUtility(driver);
 		PageFactory.initElements(driver, this);
 		
 	}
-
 
 
 

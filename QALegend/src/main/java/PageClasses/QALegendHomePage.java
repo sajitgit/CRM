@@ -96,6 +96,14 @@ public class QALegendHomePage {
 		
 	}
 	
+	public boolean usernameisDisplayedorNot() {
+		
+		waitutility.waitForVisibilityofElement(usernameText);
+		boolean status = pageutilities.isElementDisplayed(usernameText);
+		return status;
+		
+	}
+	
 	public String getUsernameText() {
 		
 		waitutility.waitForVisibilityofElement(usernameText);
