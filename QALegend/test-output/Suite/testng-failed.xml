@@ -2,15 +2,19 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="Listeners.Listener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="TestScript.QALegendLoginTest">
+      <class name="TestScript.QALegendHomePageTest">
         <methods>
-          <include name="loginuserlogin"/>
           <include name="browserinitialization"/>
+          <include name="createnewDashboard"/>
           <include name="browserClose"/>
+          <include name="editDashboard"/>
         </methods>
-      </class> <!-- TestScript.QALegendLoginTest -->
+      </class> <!-- TestScript.QALegendHomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

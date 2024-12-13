@@ -15,6 +15,7 @@ import Constants.ConstantValues;
 import PageClasses.QALegendEstimatesPage;
 import PageClasses.QALegendEventPage;
 import PageClasses.QALegendHomePage;
+import PageClasses.QALegendInvoicesPage;
 import PageClasses.QALegendLoginPage;
 import PageClasses.QALegendSignUpPage;
 import PageClasses.QALegendTicketsPage;
@@ -30,6 +31,7 @@ public WebDriver driver;//declare
     QALegendSignUpPage signuppage;
     QALegendEstimatesPage estimatespage;
     QALegendTicketsPage ticketspage;
+    QALegendInvoicesPage invoicespage;
     
     
     public Properties prop;
@@ -78,6 +80,7 @@ public WebDriver driver;//declare
 		signuppage=new QALegendSignUpPage(driver);
 		estimatespage = new QALegendEstimatesPage(driver);
 		ticketspage = new QALegendTicketsPage(driver);
+		invoicespage = new QALegendInvoicesPage(driver);
 		
 	
 	}

@@ -48,6 +48,14 @@ public void waitForVisibilityofAllElements(List <WebElement> elements) {
 }
 
 
+public void waitForInvisibilityofAllElements(List<WebElement> elements) {
+	
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(ConstantValues.EXPLICITWAIT));
+	wait.until(ExpectedConditions.invisibilityOfAllElements(elements));
+	
+}
+
+
 public void waitForTextTObePresentInElement(WebDriver driver,WebElement element,String text) {
 	
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(ConstantValues.EXPLICITWAIT));
