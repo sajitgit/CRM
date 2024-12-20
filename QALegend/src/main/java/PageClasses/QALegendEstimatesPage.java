@@ -17,19 +17,19 @@ public class QALegendEstimatesPage {
 	public WaitUtility waitutility;
 	
 	
-	@FindBy(xpath = "//a[@title=\"Request an estimate\"]")
+	@FindBy(xpath = "//a[@title='Request an estimate']")
 	WebElement requestanEstimateButton;
-	@FindBy(xpath = "//a[text()=\"TestEstimate-Sample\"]")
+	@FindBy(xpath = "//a[text()='TestEstimate-Sample']")
 	WebElement testEstimateOption;
 	@FindBy(id = "custom_field_2")
 	WebElement fieldTextBox;
 	@FindBy(id = "s2id_autogen1")
 	WebElement ageBox;
-	@FindBy(xpath = "//button[@type=\"submit\"]")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement requestEstimateButton;
-	@FindBy(xpath= "//div[text()=\"Your request has been submitted successfully!\"]")
+	@FindBy(xpath= "//div[text()='Your request has been submitted successfully!']")
 	WebElement alertMessage;
-	@FindBy(xpath="//li[@class=\"list-group-item\"]/a")
+	@FindBy(xpath="//li[@class='list-group-item']/a")
 	List<WebElement> estimateList;
 	
 	

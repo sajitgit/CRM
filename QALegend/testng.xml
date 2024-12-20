@@ -8,6 +8,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="TestScript.QALegendEventTest"/>
+       <class name="TestScript.QALegendMessagesTest"/>
       <class name="TestScript.QALegendSignupTest"/>
       <class name="TestScript.QALegendLoginTest"/>
       <class name="TestScript.QALegendHomePageTest"/>

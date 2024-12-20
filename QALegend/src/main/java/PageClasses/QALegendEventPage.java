@@ -15,7 +15,7 @@ public class QALegendEventPage {
 	public PageUtilities pageutilities;
 	public WaitUtility waitutility;
 	
-	@FindBy (xpath="(//a[@title=\"Add event\"])[2]")
+	@FindBy (xpath="(//a[@title='Add event'])[2]")
 	WebElement addEventButton;	
 	@FindBy(id="title")
 	WebElement titleTextBox;	
@@ -33,7 +33,7 @@ public class QALegendEventPage {
 	WebElement location;
 	@FindBy(id="s2id_event_labels")
 	WebElement labelBox;
-	@FindBy(xpath="(//span[@class=\"select2-chosen\"])[1]")
+	@FindBy(xpath="(//span[@class='select2-chosen'])[1]")
 	WebElement clientBox;
 	@FindBy(id="only_me")
 	WebElement onlyMe;
@@ -41,7 +41,7 @@ public class QALegendEventPage {
 	WebElement repeatCheckBox;
 	@FindBy(id="repeat_every")
 	WebElement repeatEvery;
-	@FindBy(xpath="//button[@type=\"submit\"]")
+	@FindBy(xpath="//button[@type='submit']")
 	WebElement saveButton;
 	
 	

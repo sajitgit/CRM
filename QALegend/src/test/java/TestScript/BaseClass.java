@@ -17,6 +17,7 @@ import PageClasses.QALegendEventPage;
 import PageClasses.QALegendHomePage;
 import PageClasses.QALegendInvoicesPage;
 import PageClasses.QALegendLoginPage;
+import PageClasses.QALegendMessagesPage;
 import PageClasses.QALegendSignUpPage;
 import PageClasses.QALegendTicketsPage;
 
@@ -32,6 +33,7 @@ public WebDriver driver;//declare
     QALegendEstimatesPage estimatespage;
     QALegendTicketsPage ticketspage;
     QALegendInvoicesPage invoicespage;
+    QALegendMessagesPage messagespage;
     
     
     public Properties prop;
@@ -81,6 +83,7 @@ public WebDriver driver;//declare
 		estimatespage = new QALegendEstimatesPage(driver);
 		ticketspage = new QALegendTicketsPage(driver);
 		invoicespage = new QALegendInvoicesPage(driver);
+		messagespage = new QALegendMessagesPage(driver);
 		
 	
 	}

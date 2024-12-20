@@ -28,12 +28,12 @@ public class QALegendSignUpPage {
 	WebElement passwordTextBox;
 	@FindBy(id="retype_password")
 	WebElement retypepasswordTextBox;
-	@FindBy(xpath="//input[@name=\"gender\" and @value=\"male\"]")
+	@FindBy(xpath="//input[@name='gender' and @value='male']")
 	WebElement radiobuttonMale;
-	@FindBy(xpath="//button[@type=\"submit\"]")
+	@FindBy(xpath="//button[@type='submit']")
 	WebElement signupButton;
 	
-	@FindBy(xpath="//div[@class=\"app-alert-message\"]")
+	@FindBy(xpath="//div[@class='app-alert-message']")
 	WebElement alertMessage;
 	
 	

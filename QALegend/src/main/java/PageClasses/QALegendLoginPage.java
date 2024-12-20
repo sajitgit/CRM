@@ -19,10 +19,10 @@ public class QALegendLoginPage {
 	WebElement emailField;
 	
 	
-	@FindBy(xpath="//input[@type=\"password\"]")
+	@FindBy(xpath="//input[@type='password']")
 	WebElement passwordField;
 	
-	@FindBy(xpath = "//button[@type=\"submit\"]")
+	@FindBy(xpath = "//button[@type='submit']")
     WebElement submitButton; 
 	
 	

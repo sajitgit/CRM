@@ -17,64 +17,67 @@ public class QALegendHomePage {
 	public WaitUtility waitutility;
 	
 	
-	@FindBy(xpath = "//span[text()=\"Events\"]")
+	@FindBy(xpath = "//span[text()='Events']")
 	WebElement homepageEventButton;
 	
-	@FindBy(xpath = "//span[text()=\"Estimates\"]")
+	@FindBy(xpath = "//span[text()='Estimates']")
 	WebElement homapageEstimatesButton;
 	
-	@FindBy(xpath="//span[text()=\"Tickets\"]")
+	@FindBy(xpath="//span[text()='Tickets']")
 	WebElement homepageTicketsButton;
 	
-	@FindBy(xpath = "//span[text()=\"Invoices\"]")
+	@FindBy(xpath = "//span[text()='Invoices']")
 	WebElement homepageInvoicesButton;
 	
-	@FindBy(xpath = "//span[@class=\"topbar-user-name\"]")
+	@FindBy(xpath = "//span[text()='Messages']")
+	WebElement homepageMessagesButton;
+	
+	@FindBy(xpath = "//span[@class='topbar-user-name']")
 	WebElement usernameText;
 	
-	@FindBy(xpath = "//i[@class=\"fa fa-desktop\"]")
+	@FindBy(xpath = "//i[@class='fa fa-desktop']")
 	WebElement dashboarddropbutton;
 	
-	@FindBy(xpath = "(//div[@id=\"js-dashboard-popup-list\"]/a)[2]")
+	@FindBy(xpath = "(//div[@id='js-dashboard-popup-list']/a)[2]")
 	WebElement dashboardplusButton;
 	
 	@FindBy(id = "title")
 	WebElement createdashboardTitle;
 	
-	@FindBy(xpath = "//button[@type=\"submit\"]")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement saveButton;
 	
 	@FindBy(id = "add-column-button")
 	WebElement addRowButton;
 	
-	@FindBy(xpath="(//div[@class=\"grid-bg\"])[1]")
+	@FindBy(xpath="(//div[@class='grid-bg'])[1]")
 	WebElement gridPattern;
 	
-	@FindBy(xpath="//div[@data-value=\"total_projects\"]")
+	@FindBy(xpath="//div[@data-value='total_projects']")
 	WebElement totalProjectWidgetLeftColumn;
 	
-	@FindBy(xpath = "//span[text()=\"Drag and drop widgets here\"]")
+	@FindBy(xpath = "//span[text()='Drag and drop widgets here']")
 	WebElement dropWidgetsArea;
 	
 	@FindBy(id = "save-and-show-button")
 	WebElement saveAndShowbutton;
 	
-	@FindBy(xpath = "//div[@class=\"widget-details\"]//h1")
+	@FindBy(xpath = "//div[@class='widget-details']//h1")
 	WebElement projectcountinsideWidget;
 	
-	@FindBy(xpath = "//div[@class=\"js-dashboard-list\"]//a")
+	@FindBy(xpath = "//div[@class='js-dashboard-list']//a")
 	List<WebElement> dropdownitemsdashboard;
 	
-	@FindBy(xpath = "//i[@class=\"fa fa-ellipsis-h\"]")
+	@FindBy(xpath = "//i[@class='fa fa-ellipsis-h']")
 	WebElement ellipsisButton;
 	
 	@FindBy(id = "dashboard-edit-title-button")
 	WebElement editbuttoninsideEllipsis;
 	
-	@FindBy(xpath="//h4[@class=\"pull-left\"]")
+	@FindBy(xpath="//h4[@class='pull-left']")
 	WebElement titleinsideDashboardView;
 	
-	@FindBy(xpath = "//a[@class=\"delete\"]")
+	@FindBy(xpath = "//a[@class='delete']")
 	WebElement deleteButtoninsideEllipsis;
 	
 	@FindBy(id = "confirmDeleteButton")
@@ -160,7 +163,7 @@ public class QALegendHomePage {
 	
 	public String validatatingEditDashboard() {
 		
-		waitutility.waitForVisibilityofElement(projectcountinsideWidget);
+		waitutility.waitForVisibilityofElement(titleinsideDashboardView);
 		String title=pageutilities.getTextOfElement(titleinsideDashboardView);
 		return title;		
 		
@@ -192,6 +195,11 @@ public class QALegendHomePage {
 	public void clickOnHomepageInvoicesButton() {
 		
 		pageutilities.clickOnElement(homepageInvoicesButton);
+	}
+	
+	
+	public void clickonHomepageMessagesButton() {
+		pageutilities.clickOnElement(homepageMessagesButton);
 	}
 	
 }

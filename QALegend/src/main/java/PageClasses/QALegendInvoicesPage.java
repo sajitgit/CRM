@@ -18,15 +18,15 @@ public class QALegendInvoicesPage {
 	public float sum;
 	public boolean projectdisplayed = false;
 
-	@FindBy(xpath = "//table[@id=\"invoice-table\"]//tbody//td[5]")
+	@FindBy(xpath = "//table[@id='invoice-table']//tbody//td[5]")
 	List<WebElement> invoicesValueColumn;
-	@FindBy(xpath = "//th[text()=\"Total\"]//following-sibling::th[1]")
+	@FindBy(xpath = "//th[text()='Total']//following-sibling::th[1]")
 	WebElement totalAmount;
-	@FindBy(xpath = "//i[@class=\"fa fa-eye-slash\"]")
+	@FindBy(xpath = "//i[@class='fa fa-eye-slash']")
 	WebElement eyeButton;
-	@FindBy(xpath = "//div[@class=\"popover-content\"]//li")
+	@FindBy(xpath = "//div[@class='popover-content']//li")
 	List<WebElement> eyeButtonDropdownList; 
-	@FindBy(xpath="//table[@id=\"invoice-table\"]//thead//tr//th")
+	@FindBy(xpath="//table[@id='invoice-table']//thead//tr//th")
 	List<WebElement> coloumnTitles;
 	
 	

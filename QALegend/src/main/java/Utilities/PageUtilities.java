@@ -73,9 +73,9 @@ public class PageUtilities {
 		
 	}
 	
-	public void javascriptClick(WebElement element) {
+	public void javascriptClick(){
 		JavascriptExecutor jsc = (JavascriptExecutor)driver;
-		jsc.executeScript("arguments[0].click();",element);
+		jsc.executeScript("arguments[0].click();");
 	}
 	
 	public void javascriptScrollBottom() {

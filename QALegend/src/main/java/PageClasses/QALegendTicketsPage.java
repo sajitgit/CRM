@@ -16,29 +16,29 @@ public class QALegendTicketsPage {
 	public WaitUtility waitutility;
 	
 	
-	@FindBy(xpath = "//a[@title=\"Add ticket\"]")
+	@FindBy(xpath = "//a[@title='Add ticket']")
 	WebElement addticketButton;
 	@FindBy(id = "title")
 	WebElement titleTextBox;
 	@FindBy(id = "description")
 	WebElement descriptionTextBox;
-	@FindBy(xpath = "//button[@type=\"submit\"]")
+	@FindBy(xpath = "//button[@type='submit']")
 	WebElement saveButton;
-	@FindBy(xpath="//input[@type=\"search\"]")
+	@FindBy(xpath="//input[@type='search']")
 	WebElement ticketSearchBox;
-	@FindBy(xpath="(//table[@id=\"ticket-table\"]//tbody//tr//a)[1]")
+	@FindBy(xpath="(//table[@id='ticket-table']//tbody//tr//a)[1]")
 	WebElement bugIDLink;
-	@FindBy(xpath = "//table[@id=\"ticket-table\"]//tr//td//span")
+	@FindBy(xpath = "//table[@id='ticket-table']//tr//td//span")
 	List<WebElement> tablerownewStatus;
-	@FindBy(xpath ="//table[@id=\"ticket-table\"]//tr//td//a")
+	@FindBy(xpath ="//table[@id='ticket-table']//tr//td//a")
 	List<WebElement> tablerowid;
-	@FindBy(xpath="//div[@class=\"circle-loader\"]")
+	@FindBy(xpath="//div[@class='circle-loader']")
 	WebElement loader;
-	@FindBy(xpath="//i[@class=\"fa fa-cogs\"]")
+	@FindBy(xpath="//i[@class='fa fa-cogs']")
 	WebElement optionsbutton;
-	@FindBy(xpath="//a[@title=\"Mark Project as Open\"]")
+	@FindBy(xpath="//a[@title='Mark Project as Open']")
 	WebElement markasClosedButton;
-	@FindBy(xpath ="//span[@class=\"label label-success large\"]")
+	@FindBy(xpath ="//span[@class='label label-success large']")
 	WebElement closedStatusLabel;
 	
 	
