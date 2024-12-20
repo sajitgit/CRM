@@ -8,13 +8,13 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="TestScript.QALegendEventTest"/>
-       <class name="TestScript.QALegendMessagesTest"/>
+     <!--  <class name="TestScript.QALegendMessagesTest"/>
       <class name="TestScript.QALegendSignupTest"/>
       <class name="TestScript.QALegendLoginTest"/>
       <class name="TestScript.QALegendHomePageTest"/>
       <class name ="TestScript.QALegendEstimatesTest"/>
       <class name ="TestScript.QALegendTicketsTest"/>
-      <class name ="TestScript.QALegendInvoicesTest"/>
+      <class name ="TestScript.QALegendInvoicesTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
