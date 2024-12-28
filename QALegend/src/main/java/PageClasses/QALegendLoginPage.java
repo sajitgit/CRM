@@ -26,6 +26,10 @@ public class QALegendLoginPage {
     WebElement submitButton; 
 	
 	
+	@FindBy(xpath ="//a[text() = 'Sign up']")
+	WebElement signupButton;
+	
+	
 	
 
 	
@@ -41,6 +45,11 @@ public class QALegendLoginPage {
 		
 	}
 
+	
+	public void clickOnSignUp() {
+		waitutility.waitForVisibilityofElement(signupButton);
+		pageutilities.clickOnElement(signupButton);
+	}
 
 
 

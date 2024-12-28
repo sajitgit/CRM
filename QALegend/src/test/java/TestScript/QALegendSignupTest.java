@@ -12,7 +12,7 @@ public class QALegendSignupTest extends BaseClass {
 	@Test()
 	public  void registeringUser() {
 		
-		driver.get(prop.getProperty("url2"));
+		loginpage.clickOnSignUp();
 	    String email = FakerUtility.uniqueStringGenerator()+"testcompany@yopmail.com";
 	    this.email=email;
 		signuppage.enterSignupDetails(prop.getProperty("signupfirstname"),prop.getProperty("signuplastname"),prop.getProperty("company"),email,prop.getProperty("signuppassword"));

@@ -111,7 +111,7 @@ public class QALegendHomePage {
 	public boolean usernameisDisplayedorNot() {
 		
 		waitutility.waitForInvisibilityofElement(loader);
-		waitutility.waitForVisibilityofElement(dropdownIcon);
+		waitutility.waitForVisibilityofElement(usernameText);
 		boolean status = pageutilities.isElementDisplayed(usernameText);
 		return status;
 		

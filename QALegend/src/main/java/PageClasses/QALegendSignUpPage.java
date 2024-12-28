@@ -16,6 +16,7 @@ public class QALegendSignUpPage {
 	public WaitUtility waitutility;
 
 
+	
 	@FindBy(id="first_name")
 	WebElement firstnameTextBox;
 	@FindBy(id="last_name")
