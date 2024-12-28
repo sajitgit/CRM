@@ -28,7 +28,7 @@ public class QALegendSignUpPage {
 	WebElement emailTextBox;
 	@FindBy(id="password")
 	WebElement passwordTextBox;
-	@FindBy(id="retype_password")
+	@FindBy(xpath = "//input[@name='retype_password']")
 	WebElement retypepasswordTextBox;
 	@FindBy(xpath="//input[@name='gender' and @value='male']")
 	WebElement radiobuttonMale;
