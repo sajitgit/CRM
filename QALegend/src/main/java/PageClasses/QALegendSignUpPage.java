@@ -72,6 +72,7 @@ public class QALegendSignUpPage {
 		waitutility.waitForVisibilityofElement(passwordTextBox);
 		passwordTextBox.sendKeys(password);
 		pageutilities.clickOnElement(retypepasswordTextBox);
+		pageutilities.javascriptScrollelementToView(retypepasswordTextBox);
 		retypepasswordTextBox.sendKeys(password);
 		pageutilities.clickOnElement(radiobuttonMale);
 		pageutilities.clickOnElement(signupButton);
