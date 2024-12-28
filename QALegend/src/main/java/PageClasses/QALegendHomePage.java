@@ -32,6 +32,9 @@ public class QALegendHomePage {
 	@FindBy(xpath = "//span[text()='Messages']")
 	WebElement homepageMessagesButton;
 	
+	@FindBy(id = "user-dropdown-icon")
+	WebElement dropdownIcon;
+	
 	@FindBy(xpath = "//span[@class='topbar-user-name']")
 	WebElement usernameText;
 	
@@ -108,6 +111,7 @@ public class QALegendHomePage {
 	public boolean usernameisDisplayedorNot() {
 		
 		waitutility.waitForInvisibilityofElement(loader);
+		waitutility.waitForVisibilityofElement(dropdownIcon);
 		boolean status = pageutilities.isElementDisplayed(usernameText);
 		return status;
 		
@@ -115,7 +119,8 @@ public class QALegendHomePage {
 	
 	public String getUsernameText() {
 		
-		waitutility.waitForVisibilityofElement(usernameText);
+		waitutility.waitForInvisibilityofElement(loader);
+		waitutility.waitForVisibilityofElement(dropdownIcon);
 		String userName=pageutilities.getTextOfElement(usernameText);
 		return userName;
 		
