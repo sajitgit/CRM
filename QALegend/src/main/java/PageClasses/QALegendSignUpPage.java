@@ -16,7 +16,8 @@ public class QALegendSignUpPage {
 	public WaitUtility waitutility;
 
 
-	
+	@FindBy(xpath="//h2[text()='Sign up']")
+	WebElement signUpLabel;
 	@FindBy(id="first_name")
 	WebElement firstnameTextBox;
 	@FindBy(id="last_name")
@@ -60,6 +61,7 @@ public class QALegendSignUpPage {
 	
 	public void enterSignupDetails(String firstname,String lastname,String Company,String email,String password) {
 		
+		waitutility.waitForVisibilityofElement(signUpLabel);
 		waitutility.waitForVisibilityofElement(firstnameTextBox);
 		firstnameTextBox.sendKeys(firstname);
 		lastnameTextBox.sendKeys(lastname);
