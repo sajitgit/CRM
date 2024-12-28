@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-28T12:21:30 IST" name="Suite" finished-at="2024-12-28T12:23:39 IST" duration-ms="128961">
+  <suite started-at="2024-12-28T13:07:00 IST" name="Suite" finished-at="2024-12-28T13:08:45 IST" duration-ms="105491">
     <groups>
     </groups>
-    <test started-at="2024-12-28T12:21:30 IST" name="Test" finished-at="2024-12-28T12:23:39 IST" duration-ms="128961">
+    <test started-at="2024-12-28T13:07:00 IST" name="Test" finished-at="2024-12-28T13:08:45 IST" duration-ms="105491">
       <class name="TestScript.QALegendEventTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T12:21:30 IST" name="browserinitialization" finished-at="2024-12-28T12:21:56 IST" duration-ms="25953" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T13:07:00 IST" name="browserinitialization" finished-at="2024-12-28T13:07:25 IST" duration-ms="25123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="addanEvent()[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T12:21:56 IST" name="addanEvent" finished-at="2024-12-28T12:22:04 IST" duration-ms="8145" status="PASS">
+        <test-method signature="addanEvent()[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T13:07:25 IST" name="addanEvent" finished-at="2024-12-28T13:07:33 IST" duration-ms="8300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addanEvent -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T12:22:04 IST" name="afterMethod" finished-at="2024-12-28T12:22:05 IST" duration-ms="518" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T13:07:33 IST" name="afterMethod" finished-at="2024-12-28T13:07:34 IST" duration-ms="556" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,15 +28,15 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendEventTest -->
       <class name="TestScript.QALegendSignupTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T12:22:42 IST" name="browserinitialization" finished-at="2024-12-28T12:23:07 IST" duration-ms="24772" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T13:08:10 IST" name="browserinitialization" finished-at="2024-12-28T13:08:34 IST" duration-ms="24021" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="registeringUser()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T12:23:07 IST" name="registeringUser" finished-at="2024-12-28T12:23:12 IST" duration-ms="4669" status="PASS">
+        <test-method signature="registeringUser()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T13:08:34 IST" name="registeringUser" finished-at="2024-12-28T13:08:40 IST" duration-ms="6667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registeringUser -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T12:23:12 IST" name="afterMethod" finished-at="2024-12-28T12:23:12 IST" duration-ms="457" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T13:08:40 IST" name="afterMethod" finished-at="2024-12-28T13:08:41 IST" duration-ms="493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,36 +47,167 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T12:23:12 IST" name="browserinitialization" finished-at="2024-12-28T12:23:36 IST" duration-ms="23838" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T13:08:41 IST" name="browserinitialization" finished-at="2024-12-28T13:08:45 IST" duration-ms="4413" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c92850f174b69034be3f1eaab5c44be1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50400/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c92850f174b69034be3f1eaab5c44be1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c92850f174b69034be3f1eaab5c44be1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50400/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c92850f174b69034be3f1eaab5c44be1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+at TestScript.BaseClass.browserinitialization(BaseClass.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T12:23:36 IST" name="signedupUserSignin" finished-at="2024-12-28T12:23:39 IST" duration-ms="2585" status="PASS">
+        <test-method signature="signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T13:08:45 IST" name="signedupUserSignin" finished-at="2024-12-28T13:08:45 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c92850f174b69034be3f1eaab5c44be1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50400/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c92850f174b69034be3f1eaab5c44be1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.205)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c92850f174b69034be3f1eaab5c44be1, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50400}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50400/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c92850f174b69034be3f1eaab5c44be1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1061)
+at TestScript.BaseClass.browserinitialization(BaseClass.java:80)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signedupUserSignin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T12:23:39 IST" name="afterMethod" finished-at="2024-12-28T12:23:39 IST" duration-ms="441" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=signedupUserSignin status=SUCCESS method=QALegendSignupTest.signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T13:08:45 IST" name="afterMethod" finished-at="2024-12-28T13:08:45 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendSignupTest -->
       <class name="TestScript.QALegendMessagesTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T12:22:05 IST" name="browserinitialization" finished-at="2024-12-28T12:22:29 IST" duration-ms="24254" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T13:07:34 IST" name="browserinitialization" finished-at="2024-12-28T13:07:58 IST" duration-ms="24095" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="composingAMessage()[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T12:22:29 IST" name="composingAMessage" finished-at="2024-12-28T12:22:42 IST" duration-ms="12785" status="PASS">
+        <test-method signature="composingAMessage()[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T13:07:58 IST" name="composingAMessage" finished-at="2024-12-28T13:08:09 IST" duration-ms="11103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composingAMessage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T12:22:42 IST" name="afterMethod" finished-at="2024-12-28T12:22:42 IST" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T13:08:09 IST" name="afterMethod" finished-at="2024-12-28T13:08:10 IST" duration-ms="563" status="PASS">
           <params>
             <param index="0">
               <value>
