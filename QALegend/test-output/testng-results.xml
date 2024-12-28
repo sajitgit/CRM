@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-27T21:11:03 IST" name="Suite" finished-at="2024-12-27T21:13:23 IST" duration-ms="140505">
+  <suite started-at="2024-12-28T11:07:18 IST" name="Suite" finished-at="2024-12-28T11:09:25 IST" duration-ms="127276">
     <groups>
     </groups>
-    <test started-at="2024-12-27T21:11:03 IST" name="Test" finished-at="2024-12-27T21:13:23 IST" duration-ms="140505">
+    <test started-at="2024-12-28T11:07:18 IST" name="Test" finished-at="2024-12-28T11:09:25 IST" duration-ms="127276">
       <class name="TestScript.QALegendEventTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-27T21:11:03 IST" name="browserinitialization" finished-at="2024-12-27T21:11:33 IST" duration-ms="29734" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T11:07:18 IST" name="browserinitialization" finished-at="2024-12-28T11:07:43 IST" duration-ms="25114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="addanEvent()[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-27T21:11:33 IST" name="addanEvent" finished-at="2024-12-27T21:11:43 IST" duration-ms="10593" status="PASS">
+        <test-method signature="addanEvent()[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T11:07:43 IST" name="addanEvent" finished-at="2024-12-28T11:07:51 IST" duration-ms="7902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addanEvent -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-27T21:11:43 IST" name="afterMethod" finished-at="2024-12-27T21:11:44 IST" duration-ms="903" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendEventTest@6bf08014]" started-at="2024-12-28T11:07:51 IST" name="afterMethod" finished-at="2024-12-28T11:07:52 IST" duration-ms="734" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,15 +28,15 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendEventTest -->
       <class name="TestScript.QALegendSignupTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-27T21:12:21 IST" name="browserinitialization" finished-at="2024-12-27T21:12:48 IST" duration-ms="26169" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T11:08:29 IST" name="browserinitialization" finished-at="2024-12-28T11:08:53 IST" duration-ms="23644" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="registeringUser()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-27T21:12:48 IST" name="registeringUser" finished-at="2024-12-27T21:12:54 IST" duration-ms="6219" status="PASS">
+        <test-method signature="registeringUser()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T11:08:53 IST" name="registeringUser" finished-at="2024-12-28T11:08:58 IST" duration-ms="4928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registeringUser -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-27T21:12:54 IST" name="afterMethod" finished-at="2024-12-27T21:12:55 IST" duration-ms="791" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T11:08:58 IST" name="afterMethod" finished-at="2024-12-28T11:08:58 IST" duration-ms="487" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -47,15 +47,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-27T21:12:55 IST" name="browserinitialization" finished-at="2024-12-27T21:13:21 IST" duration-ms="26050" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T11:08:58 IST" name="browserinitialization" finished-at="2024-12-28T11:09:22 IST" duration-ms="24088" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-27T21:13:21 IST" name="signedupUserSignin" finished-at="2024-12-27T21:13:23 IST" duration-ms="2268" status="PASS">
+        <test-method signature="signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T11:09:22 IST" name="signedupUserSignin" finished-at="2024-12-28T11:09:25 IST" duration-ms="2433" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signedupUserSignin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-27T21:13:23 IST" name="afterMethod" finished-at="2024-12-27T21:13:23 IST" duration-ms="544" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@455b6df1]" started-at="2024-12-28T11:09:25 IST" name="afterMethod" finished-at="2024-12-28T11:09:25 IST" duration-ms="458" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -68,15 +68,15 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendSignupTest -->
       <class name="TestScript.QALegendMessagesTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-27T21:11:44 IST" name="browserinitialization" finished-at="2024-12-27T21:12:10 IST" duration-ms="25311" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T11:07:52 IST" name="browserinitialization" finished-at="2024-12-28T11:08:16 IST" duration-ms="23855" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="composingAMessage()[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-27T21:12:10 IST" name="composingAMessage" finished-at="2024-12-27T21:12:20 IST" duration-ms="10855" status="PASS">
+        <test-method signature="composingAMessage()[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T11:08:16 IST" name="composingAMessage" finished-at="2024-12-28T11:08:29 IST" duration-ms="12939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composingAMessage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-27T21:12:20 IST" name="afterMethod" finished-at="2024-12-27T21:12:21 IST" duration-ms="859" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendMessagesTest@20c0a64d]" started-at="2024-12-28T11:08:29 IST" name="afterMethod" finished-at="2024-12-28T11:08:29 IST" duration-ms="538" status="PASS">
           <params>
             <param index="0">
               <value>

@@ -83,6 +83,9 @@ public class QALegendHomePage {
 	@FindBy(id = "confirmDeleteButton")
 	WebElement confirmDeleteButton;
 	
+	@FindBy(xpath="//div[@class='circle-loader']")
+	WebElement loader;
+	
 	
 	
 	
@@ -104,6 +107,7 @@ public class QALegendHomePage {
 	
 	public boolean usernameisDisplayedorNot() {
 		
+		waitutility.waitForInvisibilityofElement(loader);
 		waitutility.waitForVisibilityofElement(usernameText);
 		boolean status = pageutilities.isElementDisplayed(usernameText);
 		return status;

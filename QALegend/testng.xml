@@ -10,7 +10,7 @@
       <class name="TestScript.QALegendEventTest"/>
        <class name="TestScript.QALegendMessagesTest"/>
       <class name="TestScript.QALegendSignupTest"/>
-      <!--<class name="TestScript.QALegendLoginTest"/>
+     <!-- <class name="TestScript.QALegendLoginTest"/>
       <class name="TestScript.QALegendHomePageTest"/>
       <class name ="TestScript.QALegendEstimatesTest"/>
       <class name ="TestScript.QALegendTicketsTest"/>

@@ -59,7 +59,7 @@ public class QALegendSignUpPage {
 	
 	public void enterSignupDetails(String firstname,String lastname,String Company,String email,String password) {
 		
-	
+		waitutility.waitForVisibilityofElement(firstnameTextBox);
 		firstnameTextBox.sendKeys(firstname);
 		lastnameTextBox.sendKeys(lastname);
 		companynameTextBox.sendKeys(Company);
