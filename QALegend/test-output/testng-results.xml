@@ -1,44 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
+<testng-results retried="1" ignored="1" total="13" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-28T13:40:44 IST" name="Suite" finished-at="2024-12-28T13:46:55 IST" duration-ms="370717">
+  <suite started-at="2024-12-30T18:22:21 IST" name="Suite" finished-at="2024-12-30T18:29:25 IST" duration-ms="423067">
     <groups>
     </groups>
-    <test started-at="2024-12-28T13:40:44 IST" name="Test" finished-at="2024-12-28T13:46:55 IST" duration-ms="370717">
+    <test started-at="2024-12-30T18:22:21 IST" name="Test" finished-at="2024-12-30T18:29:25 IST" duration-ms="423067">
       <class name="TestScript.QALegendHomePageTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@6f7923a5]" started-at="2024-12-28T13:43:19 IST" name="browserinitialization" finished-at="2024-12-28T13:43:43 IST" duration-ms="23974" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:24:52 IST" name="browserinitialization" finished-at="2024-12-30T18:25:17 IST" duration-ms="24327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="createnewDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@6f7923a5]" started-at="2024-12-28T13:43:43 IST" name="createnewDashboard" finished-at="2024-12-28T13:43:51 IST" duration-ms="8293" status="PASS">
+        <test-method retried="true" signature="createnewDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:25:17 IST" name="createnewDashboard" finished-at="2024-12-30T18:26:04 IST" duration-ms="47617" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='widget-details']//h1' (tried for 30 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='widget-details']//h1' (tried for 30 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at Utilities.WaitUtility.waitForVisibilityofElement(WaitUtility.java:25)
+at PageClasses.QALegendHomePage.totalProjectsCountfromwidgets(QALegendHomePage.java:148)
+at TestScript.QALegendHomePageTest.createnewDashboard(QALegendHomePageTest.java:15)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='widget-details']//h1"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1fe9df5b0bebc103c0212c12bb79ed1e, findElement {using=xpath, value=//div[@class='widget-details']//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63863}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63863/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fe9df5b0bebc103c0212c12bb79ed1e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createnewDashboard -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendHomePageTest@6f7923a5]" started-at="2024-12-28T13:43:51 IST" name="afterMethod" finished-at="2024-12-28T13:43:51 IST" duration-ms="428" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:26:04 IST" name="afterMethod" finished-at="2024-12-30T18:26:05 IST" duration-ms="515" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createnewDashboard status=SUCCESS method=QALegendHomePageTest.createnewDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@6f7923a5] output={null}]]]>
+                <![CDATA[[TestResult name=createnewDashboard status=SKIP method=QALegendHomePageTest.createnewDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@6f7923a5]" started-at="2024-12-28T13:43:51 IST" name="browserinitialization" finished-at="2024-12-28T13:44:16 IST" duration-ms="24255" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:26:05 IST" name="browserinitialization" finished-at="2024-12-30T18:26:29 IST" duration-ms="24324" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="editDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@6f7923a5]" started-at="2024-12-28T13:44:16 IST" name="editDashboard" finished-at="2024-12-28T13:44:34 IST" duration-ms="18041" status="PASS">
+        <test-method signature="createnewDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:26:29 IST" name="createnewDashboard" finished-at="2024-12-30T18:26:37 IST" duration-ms="8204" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editDashboard -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendHomePageTest@6f7923a5]" started-at="2024-12-28T13:44:34 IST" name="afterMethod" finished-at="2024-12-28T13:44:34 IST" duration-ms="434" status="PASS">
+        </test-method> <!-- createnewDashboard -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:26:37 IST" name="afterMethod" finished-at="2024-12-30T18:26:38 IST" duration-ms="406" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=editDashboard status=SUCCESS method=QALegendHomePageTest.editDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@6f7923a5] output={null}]]]>
+                <![CDATA[[TestResult name=createnewDashboard status=SUCCESS method=QALegendHomePageTest.createnewDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:26:38 IST" name="browserinitialization" finished-at="2024-12-30T18:26:55 IST" duration-ms="17181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserinitialization -->
+        <test-method signature="editDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:26:55 IST" name="editDashboard" finished-at="2024-12-30T18:27:12 IST" duration-ms="17216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editDashboard -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendHomePageTest@60410cd]" started-at="2024-12-30T18:27:12 IST" name="afterMethod" finished-at="2024-12-30T18:27:13 IST" duration-ms="486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editDashboard status=SUCCESS method=QALegendHomePageTest.editDashboard()[pri:0, instance:TestScript.QALegendHomePageTest@60410cd] output={null}]]]>
               </value>
             </param>
           </params>
@@ -47,19 +137,19 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendHomePageTest -->
       <class name="TestScript.QALegendLoginTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendLoginTest@37e4d7bb]" started-at="2024-12-28T13:42:52 IST" name="browserinitialization" finished-at="2024-12-28T13:43:16 IST" duration-ms="23808" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendLoginTest@4ebff610]" started-at="2024-12-30T18:24:25 IST" name="browserinitialization" finished-at="2024-12-30T18:24:50 IST" duration-ms="24574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="loginuserlogin()[pri:0, instance:TestScript.QALegendLoginTest@37e4d7bb]" started-at="2024-12-28T13:43:16 IST" name="loginuserlogin" finished-at="2024-12-28T13:43:18 IST" duration-ms="2490" status="PASS">
+        <test-method signature="loginuserlogin()[pri:0, instance:TestScript.QALegendLoginTest@4ebff610]" started-at="2024-12-30T18:24:50 IST" name="loginuserlogin" finished-at="2024-12-30T18:24:52 IST" duration-ms="2409" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginuserlogin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendLoginTest@37e4d7bb]" started-at="2024-12-28T13:43:18 IST" name="afterMethod" finished-at="2024-12-28T13:43:19 IST" duration-ms="379" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendLoginTest@4ebff610]" started-at="2024-12-30T18:24:52 IST" name="afterMethod" finished-at="2024-12-30T18:24:52 IST" duration-ms="438" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginuserlogin status=SUCCESS method=QALegendLoginTest.loginuserlogin()[pri:0, instance:TestScript.QALegendLoginTest@37e4d7bb] output={null}]]]>
+                <![CDATA[[TestResult name=loginuserlogin status=SUCCESS method=QALegendLoginTest.loginuserlogin()[pri:0, instance:TestScript.QALegendLoginTest@4ebff610] output={null}]]]>
               </value>
             </param>
           </params>
@@ -68,38 +158,38 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendLoginTest -->
       <class name="TestScript.QALegendInvoicesTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendInvoicesTest@45a37759]" started-at="2024-12-28T13:45:46 IST" name="browserinitialization" finished-at="2024-12-28T13:46:10 IST" duration-ms="24184" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendInvoicesTest@38604b81]" started-at="2024-12-30T18:28:15 IST" name="browserinitialization" finished-at="2024-12-30T18:28:39 IST" duration-ms="24346" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="eyeButtonFunctionality()[pri:0, instance:TestScript.QALegendInvoicesTest@45a37759]" started-at="2024-12-28T13:46:10 IST" name="eyeButtonFunctionality" finished-at="2024-12-28T13:46:26 IST" duration-ms="16570" status="PASS">
+        <test-method signature="eyeButtonFunctionality()[pri:0, instance:TestScript.QALegendInvoicesTest@38604b81]" started-at="2024-12-30T18:28:39 IST" name="eyeButtonFunctionality" finished-at="2024-12-30T18:28:55 IST" duration-ms="15913" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- eyeButtonFunctionality -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendInvoicesTest@45a37759]" started-at="2024-12-28T13:46:26 IST" name="afterMethod" finished-at="2024-12-28T13:46:27 IST" duration-ms="446" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendInvoicesTest@38604b81]" started-at="2024-12-30T18:28:55 IST" name="afterMethod" finished-at="2024-12-30T18:28:56 IST" duration-ms="459" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=eyeButtonFunctionality status=SUCCESS method=QALegendInvoicesTest.eyeButtonFunctionality()[pri:0, instance:TestScript.QALegendInvoicesTest@45a37759] output={null}]]]>
+                <![CDATA[[TestResult name=eyeButtonFunctionality status=SUCCESS method=QALegendInvoicesTest.eyeButtonFunctionality()[pri:0, instance:TestScript.QALegendInvoicesTest@38604b81] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendInvoicesTest@45a37759]" started-at="2024-12-28T13:46:27 IST" name="browserinitialization" finished-at="2024-12-28T13:46:51 IST" duration-ms="24052" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendInvoicesTest@38604b81]" started-at="2024-12-30T18:28:56 IST" name="browserinitialization" finished-at="2024-12-30T18:29:20 IST" duration-ms="24233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="validatingInvoiceAmount()[pri:0, instance:TestScript.QALegendInvoicesTest@45a37759]" started-at="2024-12-28T13:46:51 IST" name="validatingInvoiceAmount" finished-at="2024-12-28T13:46:55 IST" duration-ms="3714" status="PASS">
+        <test-method signature="validatingInvoiceAmount()[pri:0, instance:TestScript.QALegendInvoicesTest@38604b81]" started-at="2024-12-30T18:29:20 IST" name="validatingInvoiceAmount" finished-at="2024-12-30T18:29:24 IST" duration-ms="4149" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatingInvoiceAmount -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendInvoicesTest@45a37759]" started-at="2024-12-28T13:46:55 IST" name="afterMethod" finished-at="2024-12-28T13:46:55 IST" duration-ms="418" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendInvoicesTest@38604b81]" started-at="2024-12-30T18:29:24 IST" name="afterMethod" finished-at="2024-12-30T18:29:25 IST" duration-ms="407" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validatingInvoiceAmount status=SUCCESS method=QALegendInvoicesTest.validatingInvoiceAmount()[pri:0, instance:TestScript.QALegendInvoicesTest@45a37759] output={null}]]]>
+                <![CDATA[[TestResult name=validatingInvoiceAmount status=SUCCESS method=QALegendInvoicesTest.validatingInvoiceAmount()[pri:0, instance:TestScript.QALegendInvoicesTest@38604b81] output={null}]]]>
               </value>
             </param>
           </params>
@@ -108,19 +198,19 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendInvoicesTest -->
       <class name="TestScript.QALegendEventTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEventTest@75d2da2d]" started-at="2024-12-28T13:40:44 IST" name="browserinitialization" finished-at="2024-12-28T13:41:10 IST" duration-ms="25687" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEventTest@14f9390f]" started-at="2024-12-30T18:22:22 IST" name="browserinitialization" finished-at="2024-12-30T18:22:50 IST" duration-ms="28511" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="addanEvent()[pri:0, instance:TestScript.QALegendEventTest@75d2da2d]" started-at="2024-12-28T13:41:10 IST" name="addanEvent" finished-at="2024-12-28T13:41:18 IST" duration-ms="7837" status="PASS">
+        <test-method signature="addanEvent()[pri:0, instance:TestScript.QALegendEventTest@14f9390f]" started-at="2024-12-30T18:22:50 IST" name="addanEvent" finished-at="2024-12-30T18:22:59 IST" duration-ms="9054" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addanEvent -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendEventTest@75d2da2d]" started-at="2024-12-28T13:41:18 IST" name="afterMethod" finished-at="2024-12-28T13:41:19 IST" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendEventTest@14f9390f]" started-at="2024-12-30T18:22:59 IST" name="afterMethod" finished-at="2024-12-30T18:23:00 IST" duration-ms="423" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addanEvent status=SUCCESS method=QALegendEventTest.addanEvent()[pri:0, instance:TestScript.QALegendEventTest@75d2da2d] output={null}]]]>
+                <![CDATA[[TestResult name=addanEvent status=SUCCESS method=QALegendEventTest.addanEvent()[pri:0, instance:TestScript.QALegendEventTest@14f9390f] output={null}]]]>
               </value>
             </param>
           </params>
@@ -129,19 +219,19 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendEventTest -->
       <class name="TestScript.QALegendTicketsTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendTicketsTest@54eb2b70]" started-at="2024-12-28T13:45:08 IST" name="browserinitialization" finished-at="2024-12-28T13:45:32 IST" duration-ms="24572" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendTicketsTest@95e33cc]" started-at="2024-12-30T18:27:38 IST" name="browserinitialization" finished-at="2024-12-30T18:28:03 IST" duration-ms="24524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="createTicket()[pri:0, instance:TestScript.QALegendTicketsTest@54eb2b70]" started-at="2024-12-28T13:45:32 IST" name="createTicket" finished-at="2024-12-28T13:45:45 IST" duration-ms="12861" status="PASS">
+        <test-method signature="createTicket()[pri:0, instance:TestScript.QALegendTicketsTest@95e33cc]" started-at="2024-12-30T18:28:03 IST" name="createTicket" finished-at="2024-12-30T18:28:15 IST" duration-ms="11633" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createTicket -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendTicketsTest@54eb2b70]" started-at="2024-12-28T13:45:45 IST" name="afterMethod" finished-at="2024-12-28T13:45:46 IST" duration-ms="487" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendTicketsTest@95e33cc]" started-at="2024-12-30T18:28:15 IST" name="afterMethod" finished-at="2024-12-30T18:28:15 IST" duration-ms="380" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createTicket status=SUCCESS method=QALegendTicketsTest.createTicket()[pri:0, instance:TestScript.QALegendTicketsTest@54eb2b70] output={null}]]]>
+                <![CDATA[[TestResult name=createTicket status=SUCCESS method=QALegendTicketsTest.createTicket()[pri:0, instance:TestScript.QALegendTicketsTest@95e33cc] output={null}]]]>
               </value>
             </param>
           </params>
@@ -150,19 +240,19 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendTicketsTest -->
       <class name="TestScript.QALegendEstimatesTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEstimatesTest@74a6f9c1]" started-at="2024-12-28T13:44:34 IST" name="browserinitialization" finished-at="2024-12-28T13:44:58 IST" duration-ms="24195" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendEstimatesTest@44d52de2]" started-at="2024-12-30T18:27:13 IST" name="browserinitialization" finished-at="2024-12-30T18:27:27 IST" duration-ms="14596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="createEstimate()[pri:0, instance:TestScript.QALegendEstimatesTest@74a6f9c1]" started-at="2024-12-28T13:44:58 IST" name="createEstimate" finished-at="2024-12-28T13:45:07 IST" duration-ms="8886" status="PASS">
+        <test-method signature="createEstimate()[pri:0, instance:TestScript.QALegendEstimatesTest@44d52de2]" started-at="2024-12-30T18:27:27 IST" name="createEstimate" finished-at="2024-12-30T18:27:38 IST" duration-ms="10685" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createEstimate -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendEstimatesTest@74a6f9c1]" started-at="2024-12-28T13:45:07 IST" name="afterMethod" finished-at="2024-12-28T13:45:08 IST" duration-ms="499" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendEstimatesTest@44d52de2]" started-at="2024-12-30T18:27:38 IST" name="afterMethod" finished-at="2024-12-30T18:27:38 IST" duration-ms="486" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createEstimate status=SUCCESS method=QALegendEstimatesTest.createEstimate()[pri:0, instance:TestScript.QALegendEstimatesTest@74a6f9c1] output={null}]]]>
+                <![CDATA[[TestResult name=createEstimate status=SUCCESS method=QALegendEstimatesTest.createEstimate()[pri:0, instance:TestScript.QALegendEstimatesTest@44d52de2] output={null}]]]>
               </value>
             </param>
           </params>
@@ -171,38 +261,38 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendEstimatesTest -->
       <class name="TestScript.QALegendSignupTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@8e50104]" started-at="2024-12-28T13:41:56 IST" name="browserinitialization" finished-at="2024-12-28T13:42:21 IST" duration-ms="24555" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@4241e0f4]" started-at="2024-12-30T18:23:32 IST" name="browserinitialization" finished-at="2024-12-30T18:23:54 IST" duration-ms="22109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="registeringUser()[pri:0, instance:TestScript.QALegendSignupTest@8e50104]" started-at="2024-12-28T13:42:21 IST" name="registeringUser" finished-at="2024-12-28T13:42:24 IST" duration-ms="3538" status="PASS">
+        <test-method signature="registeringUser()[pri:0, instance:TestScript.QALegendSignupTest@4241e0f4]" started-at="2024-12-30T18:23:54 IST" name="registeringUser" finished-at="2024-12-30T18:23:58 IST" duration-ms="3914" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registeringUser -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@8e50104]" started-at="2024-12-28T13:42:24 IST" name="afterMethod" finished-at="2024-12-28T13:42:25 IST" duration-ms="515" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@4241e0f4]" started-at="2024-12-30T18:23:58 IST" name="afterMethod" finished-at="2024-12-30T18:23:58 IST" duration-ms="448" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=registeringUser status=SUCCESS method=QALegendSignupTest.registeringUser()[pri:0, instance:TestScript.QALegendSignupTest@8e50104] output={null}]]]>
+                <![CDATA[[TestResult name=registeringUser status=SUCCESS method=QALegendSignupTest.registeringUser()[pri:0, instance:TestScript.QALegendSignupTest@4241e0f4] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@8e50104]" started-at="2024-12-28T13:42:25 IST" name="browserinitialization" finished-at="2024-12-28T13:42:49 IST" duration-ms="24466" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendSignupTest@4241e0f4]" started-at="2024-12-30T18:23:58 IST" name="browserinitialization" finished-at="2024-12-30T18:24:22 IST" duration-ms="24044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@8e50104]" started-at="2024-12-28T13:42:49 IST" name="signedupUserSignin" finished-at="2024-12-28T13:42:52 IST" duration-ms="2318" status="PASS">
+        <test-method signature="signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@4241e0f4]" started-at="2024-12-30T18:24:22 IST" name="signedupUserSignin" finished-at="2024-12-30T18:24:24 IST" duration-ms="2062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signedupUserSignin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@8e50104]" started-at="2024-12-28T13:42:52 IST" name="afterMethod" finished-at="2024-12-28T13:42:52 IST" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendSignupTest@4241e0f4]" started-at="2024-12-30T18:24:24 IST" name="afterMethod" finished-at="2024-12-30T18:24:25 IST" duration-ms="446" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=signedupUserSignin status=SUCCESS method=QALegendSignupTest.signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@8e50104] output={null}]]]>
+                <![CDATA[[TestResult name=signedupUserSignin status=SUCCESS method=QALegendSignupTest.signedupUserSignin()[pri:0, instance:TestScript.QALegendSignupTest@4241e0f4] output={null}]]]>
               </value>
             </param>
           </params>
@@ -211,19 +301,19 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- TestScript.QALegendSignupTest -->
       <class name="TestScript.QALegendMessagesTest">
-        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendMessagesTest@79dc5318]" started-at="2024-12-28T13:41:19 IST" name="browserinitialization" finished-at="2024-12-28T13:41:43 IST" duration-ms="24269" status="PASS">
+        <test-method is-config="true" signature="browserinitialization()[pri:0, instance:TestScript.QALegendMessagesTest@4b213651]" started-at="2024-12-30T18:23:00 IST" name="browserinitialization" finished-at="2024-12-30T18:23:21 IST" duration-ms="21132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserinitialization -->
-        <test-method signature="composingAMessage()[pri:0, instance:TestScript.QALegendMessagesTest@79dc5318]" started-at="2024-12-28T13:41:43 IST" name="composingAMessage" finished-at="2024-12-28T13:41:56 IST" duration-ms="12771" status="PASS">
+        <test-method signature="composingAMessage()[pri:0, instance:TestScript.QALegendMessagesTest@4b213651]" started-at="2024-12-30T18:23:21 IST" name="composingAMessage" finished-at="2024-12-30T18:23:31 IST" duration-ms="10801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- composingAMessage -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendMessagesTest@79dc5318]" started-at="2024-12-28T13:41:56 IST" name="afterMethod" finished-at="2024-12-28T13:41:56 IST" duration-ms="529" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:TestScript.QALegendMessagesTest@4b213651]" started-at="2024-12-30T18:23:31 IST" name="afterMethod" finished-at="2024-12-30T18:23:32 IST" duration-ms="428" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=composingAMessage status=SUCCESS method=QALegendMessagesTest.composingAMessage()[pri:0, instance:TestScript.QALegendMessagesTest@79dc5318] output={null}]]]>
+                <![CDATA[[TestResult name=composingAMessage status=SUCCESS method=QALegendMessagesTest.composingAMessage()[pri:0, instance:TestScript.QALegendMessagesTest@4b213651] output={null}]]]>
               </value>
             </param>
           </params>

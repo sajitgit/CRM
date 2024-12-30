@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">12 methods,  1 skipped,  11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestScript.QALegendHomePageTest" class="method navigator-link" hash-for-method="createnewDashboard">createnewDashboard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -168,6 +182,58 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TestScript.QALegendHomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createnewDashboard">
+                  </a> <!-- createnewDashboard -->
+                  <span class="method-name">createnewDashboard</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;widget-details&apos;]//h1&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at Utilities.WaitUtility.waitForVisibilityofElement(WaitUtility.java:25)
+	at PageClasses.QALegendHomePage.totalProjectsCountfromwidgets(QALegendHomePage.java:148)
+	at TestScript.QALegendHomePageTest.createnewDashboard(QALegendHomePageTest.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;widget-details&apos;]//h1&quot;}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1fe9df5b0bebc103c0212c12bb79ed1e, findElement {using=xpath, value=//div[@class=&apos;widget-details&apos;]//h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63863}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63863/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1fe9df5b0bebc103c0212c12bb79ed1e
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy13.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 29 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -179,36 +245,6 @@
                   <a name="loginuserlogin">
                   </a> <!-- loginuserlogin -->
                   <span class="method-name">loginuserlogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestScript.QALegendTicketsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createTicket">
-                  </a> <!-- createTicket -->
-                  <span class="method-name">createTicket</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestScript.QALegendMessagesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="composingAMessage">
-                  </a> <!-- composingAMessage -->
-                  <span class="method-name">composingAMessage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -260,6 +296,36 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">TestScript.QALegendMessagesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="composingAMessage">
+                  </a> <!-- composingAMessage -->
+                  <span class="method-name">composingAMessage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.QALegendTicketsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createTicket">
+                  </a> <!-- createTicket -->
+                  <span class="method-name">createTicket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">TestScript.QALegendInvoicesTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -282,21 +348,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestScript.QALegendEstimatesTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createEstimate">
-                  </a> <!-- createEstimate -->
-                  <span class="method-name">createEstimate</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">TestScript.QALegendEventTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -305,6 +356,21 @@
                   <a name="addanEvent">
                   </a> <!-- addanEvent -->
                   <span class="method-name">addanEvent</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestScript.QALegendEstimatesTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createEstimate">
+                  </a> <!-- createEstimate -->
+                  <span class="method-name">createEstimate</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -372,56 +438,60 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'editDashboard')
+data.setCell(0, 1, 'createnewDashboard')
 data.setCell(0, 2, 'TestScript.QALegendHomePageTest')
-data.setCell(0, 3, 18041);
+data.setCell(0, 3, 47617);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'eyeButtonFunctionality')
-data.setCell(1, 2, 'TestScript.QALegendInvoicesTest')
-data.setCell(1, 3, 16570);
+data.setCell(1, 1, 'editDashboard')
+data.setCell(1, 2, 'TestScript.QALegendHomePageTest')
+data.setCell(1, 3, 17216);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createTicket')
-data.setCell(2, 2, 'TestScript.QALegendTicketsTest')
-data.setCell(2, 3, 12861);
+data.setCell(2, 1, 'eyeButtonFunctionality')
+data.setCell(2, 2, 'TestScript.QALegendInvoicesTest')
+data.setCell(2, 3, 15913);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'composingAMessage')
-data.setCell(3, 2, 'TestScript.QALegendMessagesTest')
-data.setCell(3, 3, 12771);
+data.setCell(3, 1, 'createTicket')
+data.setCell(3, 2, 'TestScript.QALegendTicketsTest')
+data.setCell(3, 3, 11633);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'createEstimate')
-data.setCell(4, 2, 'TestScript.QALegendEstimatesTest')
-data.setCell(4, 3, 8886);
+data.setCell(4, 1, 'composingAMessage')
+data.setCell(4, 2, 'TestScript.QALegendMessagesTest')
+data.setCell(4, 3, 10801);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'createnewDashboard')
-data.setCell(5, 2, 'TestScript.QALegendHomePageTest')
-data.setCell(5, 3, 8293);
+data.setCell(5, 1, 'createEstimate')
+data.setCell(5, 2, 'TestScript.QALegendEstimatesTest')
+data.setCell(5, 3, 10685);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'addanEvent')
 data.setCell(6, 2, 'TestScript.QALegendEventTest')
-data.setCell(6, 3, 7837);
+data.setCell(6, 3, 9054);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validatingInvoiceAmount')
-data.setCell(7, 2, 'TestScript.QALegendInvoicesTest')
-data.setCell(7, 3, 3714);
+data.setCell(7, 1, 'createnewDashboard')
+data.setCell(7, 2, 'TestScript.QALegendHomePageTest')
+data.setCell(7, 3, 8204);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'registeringUser')
-data.setCell(8, 2, 'TestScript.QALegendSignupTest')
-data.setCell(8, 3, 3538);
+data.setCell(8, 1, 'validatingInvoiceAmount')
+data.setCell(8, 2, 'TestScript.QALegendInvoicesTest')
+data.setCell(8, 3, 4149);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'loginuserlogin')
-data.setCell(9, 2, 'TestScript.QALegendLoginTest')
-data.setCell(9, 3, 2490);
+data.setCell(9, 1, 'registeringUser')
+data.setCell(9, 2, 'TestScript.QALegendSignupTest')
+data.setCell(9, 3, 3914);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'signedupUserSignin')
-data.setCell(10, 2, 'TestScript.QALegendSignupTest')
-data.setCell(10, 3, 2318);
+data.setCell(10, 1, 'loginuserlogin')
+data.setCell(10, 2, 'TestScript.QALegendLoginTest')
+data.setCell(10, 3, 2409);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'signedupUserSignin')
+data.setCell(11, 2, 'TestScript.QALegendSignupTest')
+data.setCell(11, 3, 2062);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -454,152 +524,164 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addanEvent</span>
-                <span class="method-start">25690 ms</span>
+                <span class="method-start">28513 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=addanEvent status=SUCCESS method=QALegendEventTest.addanEvent()[pri:0, instance:Tes...)</span>
-                <span class="method-start">33549 ms</span>
+                <span class="method-start">37577 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.QALegendMessagesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">34069 ms</span>
+                <span class="method-start">38006 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">composingAMessage</span>
-                <span class="method-start">58338 ms</span>
+                <span class="method-start">59139 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=composingAMessage status=SUCCESS method=QALegendMessagesTest.composingAMessage()[pr...)</span>
-                <span class="method-start">71117 ms</span>
+                <span class="method-start">69944 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.QALegendSignupTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">71646 ms</span>
+                <span class="method-start">70374 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">registeringUser</span>
-                <span class="method-start">96202 ms</span>
+                <span class="method-start">92483 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=registeringUser status=SUCCESS method=QALegendSignupTest.registeringUser()[pri:0, i...)</span>
-                <span class="method-start">99748 ms</span>
+                <span class="method-start">96402 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">100265 ms</span>
+                <span class="method-start">96851 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">signedupUserSignin</span>
-                <span class="method-start">124732 ms</span>
+                <span class="method-start">120897 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=signedupUserSignin status=SUCCESS method=QALegendSignupTest.signedupUserSignin()[pr...)</span>
-                <span class="method-start">127054 ms</span>
+                <span class="method-start">122961 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.QALegendLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">127492 ms</span>
+                <span class="method-start">123409 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginuserlogin</span>
-                <span class="method-start">151300 ms</span>
+                <span class="method-start">147983 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=loginuserlogin status=SUCCESS method=QALegendLoginTest.loginuserlogin()[pri:0, inst...)</span>
-                <span class="method-start">153792 ms</span>
+                <span class="method-start">150395 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.QALegendHomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">154175 ms</span>
+                <span class="method-start">150834 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createnewDashboard</span>
-                <span class="method-start">178149 ms</span>
+                <span class="method-start">175161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=createnewDashboard status=SUCCESS method=QALegendHomePageTest.createnewDashboard()[...)</span>
-                <span class="method-start">186446 ms</span>
+                <span class="method-name">afterMethod([TestResult name=createnewDashboard status=SKIP method=QALegendHomePageTest.createnewDashboard()[pri...)</span>
+                <span class="method-start">222794 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">186875 ms</span>
+                <span class="method-start">223313 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createnewDashboard</span>
+                <span class="method-start">247638 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createnewDashboard status=SUCCESS method=QALegendHomePageTest.createnewDashboard()[...)</span>
+                <span class="method-start">255844 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">browserinitialization</span>
+                <span class="method-start">256252 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editDashboard</span>
-                <span class="method-start">211131 ms</span>
+                <span class="method-start">273433 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=editDashboard status=SUCCESS method=QALegendHomePageTest.editDashboard()[pri:0, ins...)</span>
-                <span class="method-start">229177 ms</span>
+                <span class="method-start">290654 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.QALegendEstimatesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">229615 ms</span>
+                <span class="method-start">291142 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createEstimate</span>
-                <span class="method-start">253810 ms</span>
+                <span class="method-start">305740 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=createEstimate status=SUCCESS method=QALegendEstimatesTest.createEstimate()[pri:0, ...)</span>
-                <span class="method-start">262702 ms</span>
+                <span class="method-start">316430 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.QALegendTicketsTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">263203 ms</span>
+                <span class="method-start">316918 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createTicket</span>
-                <span class="method-start">287776 ms</span>
+                <span class="method-start">341442 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=createTicket status=SUCCESS method=QALegendTicketsTest.createTicket()[pri:0, instan...)</span>
-                <span class="method-start">300637 ms</span>
+                <span class="method-start">353077 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestScript.QALegendInvoicesTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">301126 ms</span>
+                <span class="method-start">353459 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">eyeButtonFunctionality</span>
-                <span class="method-start">325310 ms</span>
+                <span class="method-start">377806 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=eyeButtonFunctionality status=SUCCESS method=QALegendInvoicesTest.eyeButtonFunction...)</span>
-                <span class="method-start">341880 ms</span>
+                <span class="method-start">393734 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">browserinitialization</span>
-                <span class="method-start">342326 ms</span>
+                <span class="method-start">394196 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validatingInvoiceAmount</span>
-                <span class="method-start">366378 ms</span>
+                <span class="method-start">418429 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=validatingInvoiceAmount status=SUCCESS method=QALegendInvoicesTest.validatingInvoic...)</span>
-                <span class="method-start">370094 ms</span>
+                <span class="method-start">422581 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
