@@ -8,7 +8,7 @@ import Utilities.FakerUtility;
 public class QALegendMessagesTest extends BaseClass{
 
 	
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public void composingAMessage() {
 		
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));

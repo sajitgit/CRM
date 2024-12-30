@@ -9,7 +9,7 @@ public class QALegendSignupTest extends BaseClass {
 	
 	public String email;
 	
-	@Test()
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public  void registeringUser() {
 		
 		loginpage.clickOnSignUp();
@@ -19,7 +19,7 @@ public class QALegendSignupTest extends BaseClass {
 		Assert.assertEquals(signuppage.getAlertDetails(), "Your account has been created successfully! Sign in");
 	}
 	
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public void signedupUserSignin() {
 				
 		loginpage.login(email,prop.getProperty("signuppassword"));

@@ -11,7 +11,7 @@ import Utilities.FakerUtility;
 public class QALegendTicketsTest extends BaseClass {
 
 	
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public void createTicket() throws IOException {
 		
 		

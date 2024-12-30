@@ -10,7 +10,7 @@ import Utilities.ExcelUtility;
 public class QALegendEstimatesTest extends BaseClass{
 
 	
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public void createEstimate() throws IOException {
 		
 		loginpage.login(prop.getProperty("loginuser"), prop.getProperty("loginpassword"));

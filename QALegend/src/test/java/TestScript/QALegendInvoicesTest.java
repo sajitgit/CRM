@@ -7,7 +7,7 @@ public class QALegendInvoicesTest extends BaseClass{
 		
 	
 	
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public void validatingInvoiceAmount() {
 			
 		loginpage.login(prop.getProperty("loginuser"), prop.getProperty("loginpassword"));
@@ -17,7 +17,7 @@ public class QALegendInvoicesTest extends BaseClass{
 	}
 
 	
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public  void eyeButtonFunctionality() {
 		
 		loginpage.login(prop.getProperty("loginuser"), prop.getProperty("loginpassword"));

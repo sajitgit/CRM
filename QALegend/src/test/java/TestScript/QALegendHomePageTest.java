@@ -7,7 +7,7 @@ import Utilities.FakerUtility;
 
 public class QALegendHomePageTest extends BaseClass {
 
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public void createnewDashboard() {
 		
 		loginpage.login(prop.getProperty("loginuser"), prop.getProperty("loginpassword"));
@@ -16,7 +16,7 @@ public class QALegendHomePageTest extends BaseClass {
 		
 	}
 	
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public void editDashboard() {
 		
 		String uniqueString = FakerUtility.uniqueStringGenerator();

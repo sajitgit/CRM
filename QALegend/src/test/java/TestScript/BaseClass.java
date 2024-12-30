@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import Constants.ConstantValues;
 import PageClasses.QALegendEstimatesPage;
@@ -44,7 +45,7 @@ public WebDriver driver;//declare
     String browsername = "chrome";
 	
 	@BeforeMethod(alwaysRun = true)
-	//@Parameters({"browser"})
+	@Parameters({"browser"})
 	
 	public void browserinitialization() throws Exception {
 		

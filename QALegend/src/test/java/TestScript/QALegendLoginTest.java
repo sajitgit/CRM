@@ -7,7 +7,7 @@ public class QALegendLoginTest extends BaseClass {
 
 	
 	
-	@Test
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
 	public void loginuserlogin() {
 		loginpage.login(prop.getProperty("loginuser"), prop.getProperty("loginpassword"));
 		Assert.assertEquals(homepage.getUsernameText(), prop.getProperty("loginusername"));

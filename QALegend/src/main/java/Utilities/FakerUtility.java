@@ -3,6 +3,9 @@ package Utilities;
 import java.util.Random;
 import java.util.UUID;
 
+import com.github.javafaker.Address;
+import com.github.javafaker.Faker;
+
 public class FakerUtility {
 
 	public static int randomNumberGenerator() {
@@ -18,5 +21,13 @@ public class FakerUtility {
 	return String.format("%s", UUID.randomUUID().toString().substring(0,5));
 	}
 	
+	
+	public String getFakeFirstname() {
+		
+		Faker faker = new Faker();
+		Address address = faker.address();
+		String text = address.firstName();
+		return text;
+	}
 	
 }
