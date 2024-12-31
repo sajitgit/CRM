@@ -16,10 +16,10 @@ public class ExcelUtility {
 	static XSSFWorkbook w;
 	static XSSFSheet sh;
 	
-public static String getStringData(int row,int col, String sheetName) throws IOException {
+public static String getStringData(int row,int col, String filepath,String sheetName) throws IOException {
 		
 	
-	String filepath = ConstantValues.TESTDATAFILE;
+	
 		f= new FileInputStream(filepath);
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet(sheetName);
@@ -30,10 +30,10 @@ public static String getStringData(int row,int col, String sheetName) throws IOE
 
 
 
-public static String getIntegerData(int row,int col, String sheetName) throws IOException {
+public static String getIntegerData(int row,int col,String filepath, String sheetName) throws IOException {
 		
 	
-	String filepath = ConstantValues.TESTDATAFILE;
+	
 		f= new FileInputStream(filepath);
 		w = new XSSFWorkbook(f);
 		sh = w.getSheet(sheetName);

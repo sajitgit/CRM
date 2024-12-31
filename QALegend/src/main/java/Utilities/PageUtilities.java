@@ -157,6 +157,13 @@ public class PageUtilities {
 		
 	}
 	
+	public void mouseLongPress(WebElement element) {
+		Actions act = new Actions(driver);
+		act.clickAndHold(element);
+		
+	}
+	
+	
 	public String getCurrentUrl() {
 		
 		String currenturl = driver.getCurrentUrl();

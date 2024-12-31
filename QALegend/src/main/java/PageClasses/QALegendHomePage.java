@@ -53,11 +53,20 @@ public class QALegendHomePage {
 	@FindBy(id = "add-column-button")
 	WebElement addRowButton;
 	
+	@FindBy(id ="add-column-collapse-panel")
+	WebElement coloumncollapsePanel;
+	
 	@FindBy(xpath="(//div[@class='grid-bg'])[1]")
 	WebElement gridPattern;
 	
+	@FindBy(id="add-column-panel-1000000")
+	WebElement coloumnpanel;
+	
 	@FindBy(xpath="//div[@data-value='total_projects']")
 	WebElement totalProjectWidgetLeftColumn;
+	
+	@FindBy(xpath = "//div[@id='add-column-panel-1000000']//div//span")
+	List<WebElement> columnOptionswidget;
 	
 	@FindBy(xpath = "//span[text()='Drag and drop widgets here']")
 	WebElement dropWidgetsArea;
@@ -102,9 +111,10 @@ public class QALegendHomePage {
 	}
 
 
-	public void clickOnHomePageEventButton() {
+	public QALegendHomePage clickOnHomePageEventButton() {
 		
 		homepageEventButton.click();
+		return this;
 		
 	}
 	
@@ -126,20 +136,25 @@ public class QALegendHomePage {
 		
 	}
 	
-	public void creatingnewDashboard() {
+	public QALegendHomePage creatingnewDashboard() {
 		
 		waitutility.waitForVisibilityofElement(dashboarddropbutton);
 		pageutilities.clickOnElement(dashboarddropbutton);
 		waitutility.waitForVisibilityofElement(dashboardplusButton);
 		pageutilities.clickOnElement(dashboardplusButton);
+		waitutility.waitForVisibilityofElement(createdashboardTitle);
 		pageutilities.enterText(createdashboardTitle, "Title");
 		pageutilities.clickOnElement(saveButton);
+		waitutility.waitForInvisibilityofElement(loader);
 		pageutilities.clickOnElement(addRowButton);
+		waitutility.waitForVisibilityofElement(coloumncollapsePanel);
 		pageutilities.clickOnElement(gridPattern);
+		waitutility.waitForVisibilityofAllElements(columnOptionswidget);
 		waitutility.waitForVisibilityofElement(dropWidgetsArea);
-		pageutilities.clickOnElement(totalProjectWidgetLeftColumn);
+		pageutilities.mouseLongPress(columnOptionswidget.get(0));
 		pageutilities.dragandDrop(totalProjectWidgetLeftColumn, dropWidgetsArea);
 		pageutilities.clickOnElement(saveAndShowbutton);
+		return this;
 		
 		
 	}

@@ -22,7 +22,7 @@ public class FakerUtility {
 	}
 	
 	
-	public String getFakeFirstname() {
+	public static String getFakeFirstname() {
 		
 		Faker faker = new Faker();
 		Address address = faker.address();

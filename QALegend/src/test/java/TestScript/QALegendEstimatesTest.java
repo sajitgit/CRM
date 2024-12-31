@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Constants.ConstantValues;
 import Utilities.ExcelUtility;
 
 public class QALegendEstimatesTest extends BaseClass{
@@ -14,7 +15,7 @@ public class QALegendEstimatesTest extends BaseClass{
 	public void createEstimate() throws IOException {
 		
 		loginpage.login(prop.getProperty("loginuser"), prop.getProperty("loginpassword"));
-		String field = ExcelUtility.getStringData(1, 2, "Sheet1");
+		String field = ExcelUtility.getStringData(1, 2,ConstantValues.TESTDATAFILE, "Sheet1");
 		homepage.clickOnEstimatesButton();
 		estimatespage.creatinganEstimate(field);
 		Assert.assertEquals(estimatespage.createEstimateAlertValidation(), "Your request has been submitted successfully!");
