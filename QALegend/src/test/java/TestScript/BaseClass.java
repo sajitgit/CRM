@@ -42,19 +42,18 @@ public WebDriver driver;//declare
     
     public Properties prop;
     public FileInputStream fis;
-    String browsername = "chrome";
+    //String browsername = "chrome";
 	
-	@BeforeMethod(alwaysRun = true)
 	@Parameters({"browser"})
-	
-	public void browserinitialization() throws Exception {
+	@BeforeMethod(alwaysRun = true,groups = {"regressiontest"})
+	public void browserinitialization(String browsername) throws Exception {
 		
 		
 		if(browsername.equalsIgnoreCase("chrome")) {
 			
 			
 			driver= new ChromeDriver();
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			
 		}
 		
 		else if (browsername.equalsIgnoreCase("Firefox")){
@@ -67,6 +66,7 @@ public WebDriver driver;//declare
 			
 			
 			driver = new EdgeDriver();
+			
 		}
 		
 		else {
@@ -74,6 +74,8 @@ public WebDriver driver;//declare
 			throw new Exception("Invalid name exception");
 		}
 		
+
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		prop=new Properties();
 		fis= new FileInputStream(ConstantValues.USERDATAFILE);
 		prop.load(fis);

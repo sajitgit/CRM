@@ -12,7 +12,7 @@ import Utilities.FakerUtility;
 public class QALegendEventTest extends BaseClass{
 
 	
-	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class ,groups = {"regressiontest"})
 	public void addanEvent() throws IOException {
 		
 		loginpage.login(prop.getProperty("username"), prop.getProperty("password"));

@@ -7,7 +7,7 @@ import Utilities.FakerUtility;
 
 public class QALegendHomePageTest extends BaseClass {
 
-	@Test(retryAnalyzer = TestScript.RetryAnalyser.class)
+	@Test(retryAnalyzer = TestScript.RetryAnalyser.class ,groups = {"regressiontest"})
 	public void createnewDashboard() {
 		
 		loginpage.login(prop.getProperty("loginuser"), prop.getProperty("loginpassword"));
